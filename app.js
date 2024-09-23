@@ -22,7 +22,20 @@ let loading = 0;
 while (loading < 100){
     console.log("Website is still loading");
     loading++;
-
-
-
 }
+
+//change CSS with Javascript 
+
+const text = document.querySelector(".title");
+const changeColor = document.querySelector(".changeColor");
+
+changeColor.addEventListener("click", function(){
+text.classList.toggle("change");
+
+})
+
+
+
+
+
+
