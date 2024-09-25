@@ -35,6 +35,25 @@ text.classList.toggle("change");
 })
 
 
+//Change CSS based upon a variable value
+
+var bttn = document.querySelector(".bttn");
+//console.log(bttn);
+var rootStyles = getComputedStyle(bttn);
+var color = rootStyles.getPropertyValue("color");
+console.log("color:", color);
+let colorValue = "#008000";
+bttn.style.setProperty('color', colorValue);
+
+
+
+//var bttn = document.querySelector(".bttn");
+//console.log(bttn);
+var rootStyles = getComputedStyle(bttn);
+var background = rootStyles.getPropertyValue("background-color");
+console.log("background-color:", background);
+let backgroundValue = "#ffff00";
+bttn.style.setProperty('background-color', backgroundValue);
 
 
 
